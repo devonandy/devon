@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poppins", sans-serif;
+  color: var(--text_color);
+}
+:root {
+  --theme_color: rgb(125, 43, 196);
+  --text_color: rgb(255, 255, 255);
+}
+body {
+  padding: 0%;
+  margin: 0%;
+}
+.logo {
+  font-weight: 300;
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+}
+.logo i {
+  font-size: 35px;
+  margin-right: 3px;
+}
+.page-1 {
+  perspective: 1px;
+  padding: 30px;
+  background: radial-gradient(
+      circle at 74.11507924397786% 94.03727213541667%,
+      #222323 0%,
+      17.5%,
+      rgba(34, 35, 35, 0) 35%
+    ),
+    radial-gradient(
+      circle at 58.97912343343099% 66.87540690104167%,
+      rgba(22, 87, 217, 0.61) 0%,
+      14.7%,
+      rgba(22, 87, 217, 0) 30%
+    ),
+    radial-gradient(
+      circle at 0.5939420064290365% 57.086690266927086%,
+      rgba(22, 87, 217, 0.38) 0%,
+      7.9799999999999995%,
+      rgba(22, 87, 217, 0) 14%
+    ),
+    radial-gradient(
+      circle at 13.200607299804688% 9.217885335286459%,
+      rgba(162, 56, 255, 0.24) 0%,
+      16.5%,
+      rgba(162, 56, 255, 0) 55%
+    ),
+    radial-gradient(
+      circle at 100% 37.314453125%,
+      rgba(22, 87, 217, 0.51) 0%,
+      9.36%,
+      rgba(22, 87, 217, 0) 18%
+    ),
+    radial-gradient(
+      circle at 78.61783345540364% 57.83340454101562%,
+      rgba(162, 56, 255, 0.65) 0%,
+      17.5%,
+      rgba(162, 56, 255, 0) 35%
+    ),
+    radial-gradient(
+      circle at 1.8846766153971355% 94.78581746419272%,
+      #222323 0%,
+      8.6%,
+      rgba(34, 35, 35, 0) 20%
+    ),
+    radial-gradient(
+      circle at 48.9013671875% 49.521484375%,
+      #000000 0%,
+      100%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content img {
+  width: 550px;
+}
+.page-1 .content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  perspective: 10px;
+}
+.buy-now-button {
+  background-color: var(--theme_color);
+  padding: 12px 45px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 200;
+  cursor: pointer !important;
+  box-shadow: 0 0 40px var(--theme_color);
+  transition: all 0.3s linear;
+  font-size: 15px;
+}
+.buy-now-button:hover {
+  background-color: var(--text_color);
+  color: #222323;
+}
+.page-1 ul {
+  display: flex;
+  font-weight: 200;
+  list-style: none;
+}
+.page-1 ul li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer !important;
+}
+.page-1 ul li i {
+  font-size: 22px;
+}
+.bx-user {
+  background-color: var(--text_color);
+  color: #222323;
+  border-radius: 50%;
+  border: 1px solid #222323;
+}
+.log-in i {
+  margin-right: 5px;
+}
+.nav .log-in:hover span {
+  color: #808282;
+}
+.nav span,
+.FAQ a {
+  transition: all 0.1s linear;
+}
+.FAQ a:hover {
+  color: var(--theme_color);
+}
+a {
+  text-decoration: none;
+}
+
+.intro-text {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.intro {
+  padding: 35px;
+  height: auto;
+  width: 767px;
+  background: linear-gradient(90deg, rgba(34, 35, 35, 0.6), transparent);
+  border-radius: 110px;
+  background-size: cover;
+}
+.intro span {
+  font-size: 25px;
+  width: 100%;
+  line-height: 20px;
+  font-weight: 200;
+}
+.intro h1 {
+  font-size: 80px;
+  font-weight: 300;
+}
+.intro-text button {
+  margin-top: 20px;
+}
+.page-2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: #222323;
+}
+.workout-tracking {
+  background-image: linear-gradient(to left, transparent, #222323),
+    url("images/page-2\ woman\ .png");
+  height: 100%;
+  background-size: cover;
+  width: 960px;
+  margin-right: 20px;
+}
+.workout-tracking .page-heading {
+  display: flex;
+  align-items: center;
+  max-width: 350px;
+}
+.workout-tracking img {
+  width: 75px;
+}
+.page-heading > span {
+  letter-spacing: 5px;
+  font-weight: 200;
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  margin-left: 12px;
+}
+.page-paragraph {
+  max-width: 480px;
+}
+.page-paragraph h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 30px;
+  letter-spacing: -3px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.page-paragraph > span {
+  font-weight: 200;
+  margin-top: 50px;
+}
+.image-holder > img {
+  position: absolute;
+  top: 20%;
+  right: 50%;
+  height: 500px;
+}
+.workout-tracking {
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.image-holder {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(755deg, var(--theme_color), #161717, #131414);
+  width: 35%;
+}
